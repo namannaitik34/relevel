@@ -97,3 +97,69 @@ console.log(num1-num2):
 3.switch statement
 4.ternary operators
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//functions are first class citizens in javascript
+
+//assign function to variables
+//pass functions as arugements
+//return functions from functions
+
+
+
+var x=5;
+var x="hello";
+var arr=[1,2,3,4];
+var person={
+name:"Utkarsh"
+}
+
+
+var f=function fun(){
+console.log("hello");
+}
+
+f();
+
+
+function add(a,b){
+return a+b;
+}
+
+
+function average(a,b,c){
+return c(a,b)/2;
+}
+
+
+average(1,2,add);
+
+function sayHi(){
+
+function sayHello(name){
+console.log("Hello ",name);
+}
+
+return sayHello;
+}
+
+const a=sayHi();
+a("Utkarsh");
